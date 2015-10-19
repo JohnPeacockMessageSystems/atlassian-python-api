@@ -3,8 +3,6 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-assert sys.version_info >= (3, 2), 'Python 3.2+ required.'
-
 setup(
     name='atlassian-python-api',
     description='Python Atlassian REST API Wrapper',
@@ -23,7 +21,7 @@ setup(
     include_package_data=True,
 
     zip_safe=False,
-    install_requires=['requests==2.7.0'],
+    install_requires=['requests>=2.7.0'],
     platforms='Platform Independent',
 
     classifiers=[
