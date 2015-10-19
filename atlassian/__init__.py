@@ -1,6 +1,11 @@
 import json
 import logging
-from urllib.parse import urlencode, urljoin
+try:
+    from urllib.parse import urlencode, urljoin
+except ImportError:
+    from urllib import urlencode
+    from urlparse import urljoin
+
 import requests
 
 
